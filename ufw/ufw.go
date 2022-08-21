@@ -107,7 +107,7 @@ func (inst *System) UWFDisable() (*Message, error) {
 }
 
 func (inst *System) ufwEnable(disable bool) (*Message, error) {
-	cmdString := "sudo ufw enable"
+	cmdString := "echo y | sudo ufw enable"
 	if disable {
 		cmdString = "sudo ufw disable"
 	}
