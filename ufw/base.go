@@ -9,7 +9,7 @@ import (
 type System struct {
 }
 
-var debug = true
+var debug = false
 
 const Permission = 0700
 
